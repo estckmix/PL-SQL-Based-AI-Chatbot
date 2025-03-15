@@ -10,6 +10,6 @@
 9. Implementing Transformer-Based Oracle Workload Forecasting.
 10. Multivariate AI Forecasting for Oracle Workload Using Transformers.
 
-Download .doc file for guide.
+Download .doc file for guide located in each steps directoryl
 
 *Note* All PL/SQL was built and tested using Oracle Database 23ai

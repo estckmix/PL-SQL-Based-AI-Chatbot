@@ -1,0 +1,4 @@
+CREATE TABLE chatbot_tokens (
+    token_id NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    token VARCHAR2(50) UNIQUE
+);

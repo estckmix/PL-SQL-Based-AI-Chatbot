@@ -1,0 +1,12 @@
+CREATE OR REPLACE PROCEDURE chatbot_feedback_logger(
+    p_question IN VARCHAR2,
+    p_rating IN NUMBER,
+    p_feedback IN VARCHAR2
+) IS
+BEGIN
+    INSERT INTO chatbot_feedback (question, user_rating, feedback) 
+    VALUES (p_question, p_rating, p_feedback);
+    
+    COMMIT;
+END chatbot_feedback_logger;
+/

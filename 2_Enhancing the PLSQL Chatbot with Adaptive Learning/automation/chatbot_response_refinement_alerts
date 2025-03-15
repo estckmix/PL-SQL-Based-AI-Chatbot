@@ -1,0 +1,6 @@
+BEGIN
+    FOR rec IN (SELECT question FROM chatbot_review_queue) LOOP
+        DBMS_OUTPUT.PUT_LINE('ALERT: The chatbot is frequently failing to answer: ' || rec.question);
+    END LOOP;
+END;
+/

@@ -1,0 +1,5 @@
+ALTER TABLE chatbot_knowledge_base ADD (stemmed_question VARCHAR2(500));
+
+UPDATE chatbot_knowledge_base 
+SET stemmed_question = LOWER(REPLACE(question, ' ', ''))
+WHERE stemmed_question IS NULL;

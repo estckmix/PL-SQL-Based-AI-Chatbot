@@ -1,0 +1,5 @@
+CREATE TABLE chatbot_knowledge_base (
+    id           NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    question     VARCHAR2(500) UNIQUE,
+    answer       CLOB
+);

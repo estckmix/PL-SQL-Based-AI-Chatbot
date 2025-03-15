@@ -1,0 +1,11 @@
+SET SERVEROUTPUT ON;
+DECLARE
+    v_response CLOB;
+BEGIN
+    chatbot_pkg.process_chatbot_query('How do I optimize an index?', v_response);
+    DBMS_OUTPUT.PUT_LINE('Chatbot Response: ' || v_response);
+    
+    -- Simulate user feedback
+    chatbot_feedback_logger('How do I optimize an index?', 2, 'The answer was too vague.');
+END;
+/

@@ -1,0 +1,8 @@
+SET SERVEROUTPUT ON;
+DECLARE
+    v_response CLOB;
+BEGIN
+    chatbot_pkg.process_chatbot_query('What is an index in Oracle?', v_response);
+    DBMS_OUTPUT.PUT_LINE('Chatbot Response: ' || v_response);
+END;
+/
